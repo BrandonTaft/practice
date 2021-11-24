@@ -107,3 +107,49 @@
 //     }
 
 //     console.log("Exited switCH
+
+
+// Complete the getLetter(s) function in the editor. It has one parameter:
+// a string,s , consisting of lowercase English alphabetic letters
+// It must return A, B, C, or D depending on the following criteria:
+
+// If the first character in string s is in the set {aeiou}, then return A.
+// If the first character in string s is in the set {bcdfg}, then return B.
+// If the first character in string  sis in the set {hjklm}, then return C.
+// If the first character in string s is in the set {npqrstvwxyz}, then return D.
+// Hint: You can get the letter at some index  in  using the syntax s[i] or s.charAt(i).
+
+// Function Description
+
+// Complete the getLetter function in the editor below.
+
+// getLetter has the following parameters:
+
+// string s: a string
+// Returns
+
+// string: a single letter determined as described above
+
+function getLetter(s) {
+    let letter;
+    // Write your code here
+    switch (s[0]) {
+        case ('a' || 'e' || 'o' || 'i' || 'u'):
+            letter = 'A';
+            break;
+
+        case ('b' || 'c' || 'd' || 'f' || 'g'):
+            letter = 'B';
+            break;
+
+        case ('h' || 'j' || 'k' || 'l' || 'm'):
+            letter = 'C';
+            break;
+
+        case ('z' || 'n' || 'p' || 'q' || 'r' || 's' || 't' || 'v' || 'w' || 'x' || 'y'):
+            letter = 'D';
+
+    }
+
+    return letter;
+}
