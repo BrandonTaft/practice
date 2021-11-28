@@ -46,11 +46,13 @@ let first = fruits.shift() // remove Apple from the front
 let newLength = fruits.unshift('Strawberry') // add to the front
 // ["Strawberry", "Banana"]
 
-//Find the index of an item in the Array
 
+//add item to end of array
 fruits.push('Mango')
+
 // ["Strawberry", "Banana", "Mango"]
 
+//Find the index of an item in the Array
 let pos = fruits.indexOf('Banana')
 // 1
 

@@ -11,6 +11,11 @@ console.log(resultsNum)
 console.log(resultsNum[resultsNum.length - 2])
 
 var compnumbers= ['5','1000','9','2','3']
-let resultsCompNum =  compnumbers.sort()
-console.log(resultsCompNum)
+let resultsCompNum =  compnumbers.sort(
 
+    var nums= ['2','6','5','6','3']
+    const max = Math.max(...nums);
+    
+        nums = nums.filter(num => num !== max);
+    
+        console.log(Math.max(...nums))
