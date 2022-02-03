@@ -1,8 +1,7 @@
 var str = "hello";
 var y = str.split("").reverse().join()
-console.log(x)
 console.log(y)
-console.log(z)
+
 
 function reverseString(str) {
     return str.split("").reverse().join("");
