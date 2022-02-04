@@ -1,3 +1,23 @@
+
+//function can take 3 args. value,index,array
+//args can be named anything
+//args dont have to be passed in but function will always 
+//think 1st is value and 2nd is index so(index,array) will be seen as (val,index)
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+
+function myFunction( x,y) {
+  let txt = y;
+  console.log(txt)
+}
+
+
+
+
+
+
 const arr = ['a', 'b', 'c', 'd'];
 
 arr.forEach((value, index, array) => {
