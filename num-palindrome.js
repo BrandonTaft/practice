@@ -19,6 +19,27 @@ function isPalindrome(x) {
 }
 console.log(isPalindrome(x))
 
+
+//number version
+function isPalindrome(){
+	if (x < 0) return false;
+  let reversed = 0
+  let y = x;
+  while (y > 0){
+  //Get the last digit of the number using the modulo (%) operator.
+  	const lastDigit = y % 10; //2
+  //multiply reversed by 10 on the right side of the assignment to ensure that we're always appending lastDigit to the ones column.
+  //reverse of y % 10, to put lastdigit at end
+    reversed = (reversed * 10) + lastDigit;//2
+    //Remove the last digit from y by dividing it by 10, and truncating the last decimal. We can do this using the bitwise OR operator |. This is another trick that can help you in future JS problems. In this case, we're converting the result into an integer, and then return the new integer:
+    y = (y / 10) | 0
+  }
+  return x === reversed
+}
+
+console.log(isPalindrome(x))
+
+
 // number version
 
 var isPalindrome = function(x) {

@@ -30,7 +30,9 @@ console.log(new Date(x).toLocaleString('en-us', {  weekday: 'long' }));
 
 function getDayName(dateString) {
     const x= new Date(dateString);
-    const dayName = new Date(x).toLocaleString('en-us', {  weekday: 'long' })
+    const dayName = new Date(x)
+    
+    ring('en-us', {  weekday: 'long' })
     return dayName;
 }
 
