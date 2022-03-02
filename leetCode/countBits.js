@@ -8,7 +8,6 @@ const ans = [];
     }
     for (var k = 0; k < ans.length; k++) {
     		let bit = ans[k];
-        let x = [];
         let a = 0;
         for(j=0; j < bit.length; j++){
         if(bit[j] == "1"){ 
