@@ -9,3 +9,20 @@ function diagonalDifference(arr) {
     }
 
 }
+
+let arr = [[11,2,4], [4,5,6], [10,8,-12]]
+
+function diagonalDifference(arr) {
+    for(let i = 0; i < arr.length; i++){
+    		console.log(arr[i])
+    }
+
+}
+
+diagonalDifference(arr)
+
+//r(let j = 0; j < arr[i].length; j++){
+    
+   //onsole.log(arr[i][j])
+   //
+   
