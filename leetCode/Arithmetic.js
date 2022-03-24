@@ -32,3 +32,4 @@ var numberOfArithmeticSlices = function(nums) {
     }
    return ans
 };
+
